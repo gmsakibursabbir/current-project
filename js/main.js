@@ -45,3 +45,4 @@ var mySwiper = new Swiper(sliderSelector, options);
 
 // Initialize slider
 mySwiper.init();
+
