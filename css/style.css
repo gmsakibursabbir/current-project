@@ -19,8 +19,30 @@
 }
 
 #hero,
+#trader,
+#discover,
+#success,
+#news,
+#offer,
+#heroGrow,
+#match,
+#psuccess,
+#faq,
+#heroTerminal,
+#testimonial,
+#heroTerminal,
+#pricing,
+#compare,
 #offer,
 #heroRequest,
+#reqform,
+#rdemo,
+#successNew,
+#explore,
+#video,
+#plartform,
+#heroTerminal,
+#testimonial,
 #reqform {
   overflow-x: hidden !important;
 }
@@ -1094,7 +1116,7 @@ textarea {
 #testimonial {
   padding: 120px 0;
 }
-.ttml-card{
+.ttml-card {
   margin-top: 0;
 }
 .ttml-row .ttml-card {
@@ -1144,9 +1166,8 @@ textarea {
 /* moment  styles end */
 .item {
   position: relative;
-  
 }
-.item img{
+.item img {
   border-radius: 12px;
 }
 .overlay {
@@ -1158,8 +1179,8 @@ textarea {
     rgba(255, 152, 0, 0.014443277310924318) 100%
   );
   width: 100%;
-  transition: .5s ease;
-  opacity:0;
+  transition: 0.5s ease;
+  opacity: 0;
   color: white;
   font-size: clamp(0.875rem, 0.446vw + 0.714rem, 1.25rem);
   padding: 30px;
@@ -1170,7 +1191,7 @@ textarea {
   justify-content: center;
   border-radius: 12px;
 }
-.item:hover .overlay{
+.item:hover .overlay {
   opacity: 1;
 }
 /* momentstyles end */
