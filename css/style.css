@@ -45,6 +45,7 @@
 #testimonial,
 #reqform {
   overflow-x: hidden !important;
+  overflow: hidden;
 }
 
 h1,
