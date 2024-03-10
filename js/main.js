@@ -1,7 +1,7 @@
-$(document).ready(function() {
+$(document).ready(function () {
   // Assign some jquery elements we'll need
   var $swiper = $(".swiper-container");
-  var $bottomSlide = null; 
+  var $bottomSlide = null;
   var $bottomSlideContent = null;
 
   var mySwiper = new Swiper(".swiper-container", {
@@ -13,7 +13,7 @@ $(document).ready(function() {
     loopAdditionalSlides: 30,
     navigation: {
       nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev"
-    }
+      prevEl: ".swiper-button-prev",
+    },
   });
 });
