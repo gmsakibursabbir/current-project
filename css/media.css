@@ -40,6 +40,7 @@
   }
   #footer {
     padding: 60px 0;
+
   }
   #heroTerminal {
     padding: 50px 0;
@@ -68,7 +69,9 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-
+#comunity{
+padding: 24px 0;
+}
   #match {
     padding: 24px 0;
   }
@@ -82,15 +85,16 @@
   #testimonial {
     padding: 40px 0;
   }
-  #heroGrow {
-    mask-image: none;
-    background-image: url(../images/hero-sm.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    padding-top: 24px;
-    padding-bottom: 250px;
-  }
+#heroGrow {
+  mask-image: none;
+  background-image: url(../images/hero-sm.png);
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+  padding-top: 24px;
+  padding-bottom: 200px;
+} 
+
   .navbar {
     padding: 20px 0;
   }
@@ -113,6 +117,10 @@
     padding-right: 0;
   }
   .success-row {
+    padding: 40px 30px;
+    border-radius: 0;
+  }
+  .success-row-new {
     padding: 40px 30px;
     border-radius: 0;
   }
@@ -161,7 +169,7 @@
   }
   .offer-right img {
     width: 300px;
-    right: -30px;
+    right: -40px;
   }
   .request-box {
     padding: 36px 32px;
@@ -186,11 +194,23 @@
 }
 
 @media (max-width: 991.98px) {
-
+  #footer{
+    background-image: url(../images/footer-sm.png);
+    background-color: #F1F1F1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
   #subscription {
     padding: 24px 0;
   }
-
+  .success-row-new {
+    background-image: url(../images/sucess-md-sm.png);
+    background-position: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
   .hero-top {
     padding-bottom: 120px;
   }
@@ -263,15 +283,7 @@
       }
     }
   }
-  #heroGrow {
-    mask-image: none;
-    background-image: url(../images/hero-sm.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
-    padding-top: 24px;
-    padding-bottom: 250px;
-  }
+
 }
 @media (max-width: 1023px) {
   .swiper-container {
@@ -281,3 +293,13 @@
     }
   }
 }
+/* @media (max-width: 1499px){
+  #heroGrow {
+    mask-image: none;
+    background-repeat: no-repeat;
+    background-position: calc(100%-95%);
+    background-size: cover;
+    padding-top: 24px;
+
+  }
+} */

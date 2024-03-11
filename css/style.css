@@ -1,5 +1,3 @@
-@import url("https://v1.fontapi.ir/css/SFProDisplay");
-
 * {
   font-family: SF Pro Display, sans-serif;
   box-sizing: border-box;
@@ -37,14 +35,15 @@
 #rdemo,
 #newsletter,
 #successNew,
+#comunity,
 #subscription,
+#testimonialMain,
 #explore,
 #video,
 #plartform,
 #heroTerminal,
 #heroRequest,
-#reqform
-{
+#reqform {
   overflow-x: hidden !important;
   overflow: hidden !important;
 }
@@ -203,9 +202,9 @@ a.csb-two {
   transition: all 0.3s ease;
 }
 
-a.csb-two i {
+a.csb-two svg {
   vertical-align: middle;
-  margin-left: 6px;
+  margin-left: 5px;
   color: var(--accent-color);
   font-size: 14px;
 }
@@ -215,9 +214,9 @@ a.csb-two:hover {
   box-shadow: 0 8px 15px rgba(95, 95, 95, 0.315);
   transform: translateY(-1px);
 }
-a.csb-two:hover i {
-  transform: translateX(5px);
+a.csb-two:hover svg path {
   color: var(--white);
+  fill: wheat;
 }
 
 a.clrb {
@@ -260,7 +259,7 @@ a.prbtn:hover {
   background-color: #ff5800;
   color: var(--white);
 }
-a.prbtn-two{
+a.prbtn-two {
   background-color: var(--accent-color);
   color: var(--white);
   transition: all 0.3s ease;
@@ -449,7 +448,16 @@ a.prbtn-two:hover {
 }
 /* discover styles end */
 /* success styles Start */
-.success-row {
+.success-row-new {
+  position: relative;
+  background-image: url(../images/sucess-bg-2.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 60px;
+}
+.success-row{
   position: relative;
   background-image: url(../images/sucess-bg-2.png);
   background-position: center;
@@ -480,6 +488,7 @@ a.prbtn-two:hover {
   bottom: 0;
   right: 40px;
 }
+
 /* success styles end */
 /* news styles start */
 #news {
@@ -554,6 +563,13 @@ a.prbtn-two:hover {
   bottom: 0;
   right: 0;
 }
+.offer-right-main img {
+  position: absolute;
+  bottom: 0;
+  right: -100px;
+  width: 70%;
+}
+
 .offer-left h2 {
   font-size: clamp(1.125rem, 1.042vw + 0.75rem, 2rem);
   font-weight: 800;
@@ -574,38 +590,85 @@ a.prbtn-two:hover {
 }
 /* offer styles end */
 /* testimonial styles start */
-
-.swiper-container {
-  position: relative;
-  max-width: 100vw;
-  height: 300px;
+#testimonialMain {
+  padding: 100px 0;
 }
-.swiper-container > .swiper-slide__content {
-  position: absolute;
-  top: 0;
+.testi-box {
+  padding: 40px;
+  text-wrap: wrap;
 }
-
-.swiper-slide {
-  height: 300px;
-  padding: 20px;
+.slick-slider .slick-track .slick-slide {
+  min-width: 500px;
+}
+.center-slider .slick-slide {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 10px;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  height: auto;
+  text-align: center;
   border-radius: 12px;
-  display: flex;
-  background: #eee;
-  align-items: center;
-  justify-content: center;
-  transition: all 200ms linear;
-  transform: scale(0.8);
+  border: 1px solid #efefef;
   filter: blur(4px);
-
-  &.swiper-slide-active {
-    transform: scale(1);
-    filter: blur(0);
-  }
 }
-.swiper-slide__content {
-  height: 300px;
+.center-slider .slick-slide,
+.center-slider
+  .slick-slide[aria-hidden="true"]:not(.slick-cloned)
+  ~ .slick-cloned[aria-hidden="true"] {
+  transform: scale(0.8, 0.8);
+  transition: all 0.4s ease-in-out;
 }
 
+/* Active center slide (You can change anything here for cenetr slide)*/
+.center-slider .slick-center,
+.center-slider
+  .slick-slide[aria-hidden="true"]:not([tabindex="-1"])
+  + .slick-cloned[aria-hidden="true"] {
+  transform: scale(1.1);
+  background-color: #ffff;
+}
+.center-slider .slick-current.slick-active {
+  transform: scale(1);
+  background-color: #fff;
+  filter: blur(0);
+}
+
+.slick-next,
+.slick-prev {
+  z-index: 5;
+}
+.slick-next {
+  right: 25.5%;
+}
+.slick-prev {
+  left: 24%;
+}
+.slick-next:before,
+.slick-prev:before {
+  padding: 10px 15px;
+  width: 15px;
+  height: 15px;
+  opacity: 1;
+}
+.slick-next:before {
+  content: url(../images/next.svg);
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 70px 0px #ff5800;
+  vertical-align: middle;
+}
+.slick-prev:before {
+  content: url(../images/prev.svg);
+
+  background-color: var(--accent-color);
+  border-radius: 50px;
+  cursor: pointer;
+  box-shadow: 0px 10px 70px 0px #ff5800;
+  vertical-align: middle;
+}
 .testi-title {
   font-size: 18px;
   text-align: center;
@@ -617,9 +680,11 @@ a.prbtn-two:hover {
   line-height: 1.3;
   margin: auto;
   padding: 14px 0;
+  text-wrap: wrap;
 }
-.avater-title {
+.avater-titlex {
   padding-left: 10px;
+  vertical-align: middle;
 }
 .user-info p.avtt-title {
   font-size: 14px;
@@ -628,13 +693,14 @@ a.prbtn-two:hover {
   text-transform: capitalize;
 }
 .user-info p.avtt-two {
-  font-size: 8px;
+  font-size: 11.5px;
+
   font-weight: 400;
   color: #898989;
   display: flex;
   flex-direction: row;
 }
-.location {
+span.location {
   display: flex;
   align-items: center;
   max-width: 10px;
@@ -642,10 +708,9 @@ a.prbtn-two:hover {
   font-size: 12px;
   font-weight: 500;
 }
-.location i {
-  font-size: 14px;
-  padding-left: 5px;
-  padding-right: 3px;
+span.location img {
+  margin-left: 5px;
+  margin-right: 3px;
 }
 .user-info .avater-testi {
   width: 40px;
@@ -716,24 +781,11 @@ a.prbtn-two:hover {
 .ft-social {
   padding-top: 24px;
 }
-.ft-social a{
-  margin-right: 3px;
-}
-.ft-social i {
-  color: var(--white);
-  width: 35px;
-  height: 30px;
-  padding: 8px;
-  border-radius: 10px;
-  background-color: var(--gray);
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
 
+.ft-social a svg:hover path {
+  fill: red;
 }
-.ft-social a:hover i{
-  background-color: var(--accent-color);
-}
+
 #copyright {
   padding: 12px 0;
   background-color: var(--text);
@@ -879,9 +931,9 @@ ul.price-list li {
   font-weight: 500;
   color: #414141;
 }
-.price-list p i {
-  font-size: 13px;
-  margin-right: 20px;
+.price-list p img {
+  width: 14px;
+  margin-right: 18px;
 }
 .price-list {
   flex-grow: 1;
@@ -909,6 +961,10 @@ ul.price-list li {
   padding: 5px 0px;
   border-radius: 12px;
   border: transparent;
+}
+
+.tab-content {
+  transition: all 0.4s ease-in-out;
 }
 
 .nav-tabs .nav-item button {
@@ -969,7 +1025,7 @@ ul.price-list li {
   font-weight: 500;
   line-height: 1.4;
   color: var(--text);
-  padding-right: 10px;
+  padding-right: 16px;
 }
 .accordion-button,
 .accordion-button:focus {
@@ -1003,9 +1059,8 @@ ul.price-list li {
 #heroGrow {
   background-image: url(../images/grow-bg.png);
   background-repeat: no-repeat;
-  height: 90vh;
   background-size: cover;
-  background-position: center;
+  background-position: 40% 60%;
   padding-top: 90px;
 }
 .grow-list img {
@@ -1036,10 +1091,10 @@ ul.price-list li {
   background-size: contain;
   padding: 100px 0;
 }
-.tstiml-row{
+.tstiml-row {
   padding-bottom: 80px;
 }
-.tstiml-row h2.tstml-title{
+.tstiml-row h2.tstml-title {
   text-align: center;
   padding-bottom: 36px;
   font-weight: 700;
@@ -1206,12 +1261,20 @@ textarea {
 /* request form styles end */
 /* testimonial form styles start */
 #testimonial {
-  padding: 120px 0;
+  padding-top: 80px;
 }
 .ttml-card {
   margin-top: 0;
 }
+.ttml-cardx{
+margin-top: 0;
+}
 .ttml-row .ttml-card {
+  box-shadow: none;
+  border: 1px solid #cccccc;
+  border-radius: 6px;
+}
+.ttml-row .ttml-cardx {
   box-shadow: none;
   border: 1px solid #cccccc;
   border-radius: 6px;
@@ -1255,11 +1318,15 @@ textarea {
   color: #b96e00;
 }
 /* testimonial form styles end */
-/* moment  styles end */
+/* comunity  styles start */
+#comunity{
+  padding: 130px 0;
+}
 .item {
   position: relative;
   overflow: hidden;
   border-radius: 12px;
+  cursor: pointer;
 }
 .item img {
   border-radius: 12px;
@@ -1279,7 +1346,7 @@ textarea {
   width: 100%;
   transition: 0.5s ease;
   opacity: 0;
-  color: white;
+  color: var(--white);
   font-size: clamp(0.875rem, 0.446vw + 0.714rem, 1.25rem);
   padding: 30px;
   text-align: center;
@@ -1289,10 +1356,13 @@ textarea {
   justify-content: center;
   border-radius: 12px;
 }
+.overlay a p{
+  color: var(--white);
+}
 .item:hover .overlay {
   opacity: 1;
 }
-/* moments styles end */
+/* comunity styles end */
 /* subscription styles start */
 #subscription {
   padding: 120px 0;
@@ -1372,7 +1442,7 @@ sup {
   color: var(--primary-color);
 }
 .vip-body .price-list {
-  padding-top: 20px;
+ 
 }
 .price-list p {
   font-size: 14px;
@@ -1421,10 +1491,13 @@ sup {
   font-weight: 400;
   padding-bottom: 12px;
 }
+.congtars-body a.hastag {
+  font-style: italic;
+}
 
 .congtars-body a {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   color: var(--accent-color);
 }
 .congtars-body a.btn {
