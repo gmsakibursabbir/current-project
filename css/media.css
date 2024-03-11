@@ -178,10 +178,12 @@ padding: 24px 0;
     padding: 20px;
   }
 
-  .vip-body img {
+  .vip-body img.pro-img {
     padding: 20px 0;
   }
-
+  .vip-body .price-list li{
+    padding-top: 0;
+  }
   .newsletter-row {
     padding: 40px 16px;
   }
