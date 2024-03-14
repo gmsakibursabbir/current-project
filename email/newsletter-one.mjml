@@ -1,0 +1,34 @@
+<mjml>
+  <mj-head>
+
+    <mj-html-attributes>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="text-color" text-color="#333333"></mj-html-attribute>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-family" font-family="Inter"></mj-html-attribute>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-size" font-size="14px"></mj-html-attribute>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="line-height" line-height="1.7"></mj-html-attribute>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="font-weight" font-weight="400"></mj-html-attribute>
+      <mj-html-attribute class="easy-email" multiple-attributes="false" attribute-name="responsive" responsive="true"></mj-html-attribute>
+
+    </mj-html-attributes>
+
+    <mj-breakpoint width="480px" />
+
+    <mj-font name="Inter" href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet" />
+    <mj-attributes>
+
+      <mj-all font-family="Inter" />
+      <mj-text font-size="14px" />
+      <mj-text color="#333333" />
+      <mj-text line-height="1.7" />
+      <mj-text font-weight="400" />
+
+    </mj-attributes>
+  </mj-head>
+  <mj-body background-color="#ffffff" width="800px">
+    <mj-section padding="20px 0px 20px 0px" background-repeat="no-repeat" background-size="cover" background-position="top center" border="none" direction="ltr" text-align="center" background-url="https://i.postimg.cc/tCsbJpVm/newsletter-hero.png">
+      <mj-column width="50%" padding="0px 0px 0px 0px">
+        <mj-text padding="10px 25px 10px 25px" align="left">PrimeMarket Terminal</mj-text>
+      </mj-column>
+    </mj-section>
+  </mj-body>
+</mjml>

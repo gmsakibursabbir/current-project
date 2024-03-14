@@ -1,4 +1,7 @@
 @media (max-width: 575.98px) {
+  .container {
+    max-width: 100%;
+  }
   .req-divider .req-down {
     width: 20px;
     height: 20px;
@@ -13,6 +16,7 @@
     top: -20px;
     left: 45%;
   }
+
   .newsletter-row {
     border-radius: 0;
   }
@@ -22,14 +26,14 @@
 }
 @media (max-width: 767.98px) {
   #hero {
-    mask-image: none;
     padding-top: 50px;
-    background-image: url(../images/hero-sm.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-    background-size: contain;
   }
+
   #trader {
+    background-image: url(../images/global-sm.png);
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: auto;
     padding: 24px 0;
   }
   #discover {
@@ -40,7 +44,6 @@
   }
   #footer {
     padding: 60px 0;
-
   }
   #heroTerminal {
     padding: 50px 0;
@@ -49,9 +52,9 @@
     padding-top: 24px;
     padding-bottom: 40px;
   }
-  #video {
+  /* #video {
     padding: 36px 0;
-  }
+  } */
   #explore {
     padding-top: 40px;
     padding-bottom: 60px;
@@ -69,13 +72,13 @@
     padding-top: 24px;
     padding-bottom: 24px;
   }
-#comunity{
-padding: 24px 0;
-}
+  #comunity {
+    padding: 24px 0;
+  }
   #match {
     padding: 24px 0;
   }
-  #matchx{
+  #matchx {
     padding: 24px 0;
     background-image: none;
   }
@@ -85,18 +88,20 @@ padding: 24px 0;
   #testimonial {
     padding: 40px 0;
   }
-#heroGrow {
-  mask-image: none;
-  background-image: url(../images/hero-sm.png);
-  background-repeat: no-repeat;
-  background-position: bottom;
-  background-size: contain;
-  padding-top: 24px;
-  padding-bottom: 200px;
-} 
-
-  .navbar {
-    padding: 20px 0;
+  #heroGrow {
+    mask-image: none;
+    background-image: url(../images/hero-sm.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    padding-top: 24px;
+    padding-bottom: 200px;
+  }
+  .container-fluid {
+    width: 100%;
+  }
+  .hero-bottom-row {
+    padding-top: 0;
   }
   .hero-discription {
     padding-top: 20px;
@@ -136,6 +141,7 @@ padding: 24px 0;
   .plartform-card img {
     width: 36px;
   }
+
   .platform-more img {
     width: 16px;
   }
@@ -181,7 +187,7 @@ padding: 24px 0;
   .vip-body img.pro-img {
     padding: 20px 0;
   }
-  .vip-body .price-list li{
+  .vip-body .price-list li {
     padding-top: 0;
   }
   .newsletter-row {
@@ -193,12 +199,31 @@ padding: 24px 0;
   .signin-txtbox {
     padding: 26px 0;
   }
+  .discover-left {
+    max-width: 100%;
+  }
+  .perfect-row {
+    padding-top: 0;
+  }
+  .modal-video-dialog {
+    max-width: 90%;
+  }
+  .modal-close-btn {
+    width: 8px;
+    height: 8px;
+    padding: 8px;
+    border-radius: 50px;
+    background-color: white;
+    position: absolute;
+    right: -20px;
+    top: -20px;
+  }
 }
 
 @media (max-width: 991.98px) {
-  #footer{
+  #footer {
     background-image: url(../images/footer-sm.png);
-    background-color: #F1F1F1;
+    background-color: #f1f1f1;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -206,16 +231,17 @@ padding: 24px 0;
   #subscription {
     padding: 24px 0;
   }
+  .navbar {
+    padding: 20px 0;
+  }
+
   .success-row-new {
     background-image: url(../images/sucess-md-sm.png);
     background-position: cover;
     background-repeat: no-repeat;
     background-size: cover;
-  
   }
-  .hero-top {
-    padding-bottom: 120px;
-  }
+
   .success-left {
     margin-bottom: 80px;
   }
@@ -268,10 +294,12 @@ padding: 24px 0;
   .vip-row {
     padding-bottom: 250px;
   }
+  .loadmore-row {
+    padding-top: 24px;
+  }
 }
 
 @media (max-width: 1180px) {
-
   .swiper-container {
     height: 28vw;
   }
@@ -285,7 +313,19 @@ padding: 24px 0;
       }
     }
   }
-
+  .play-btn {
+    max-width: 150px;
+    max-height: 150px;
+  }
+  .offcanvas {
+    width: 300px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
 }
 @media (max-width: 1023px) {
   .swiper-container {
@@ -295,13 +335,19 @@ padding: 24px 0;
     }
   }
 }
-/* @media (max-width: 1499px){
-  #heroGrow {
-    mask-image: none;
-    background-repeat: no-repeat;
-    background-position: calc(100%-95%);
-    background-size: cover;
-    padding-top: 24px;
-
+@media (max-width: 1199px) {
+  .navbar-brand {
+    margin-right: 20px;
   }
-} */
+}
+
+.navbar-nav .nav-item {
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.nav-btn {
+  margin: 20px 10px 20px 0;
+}
+
+@media (max-width: 1399px) {
+}

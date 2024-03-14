@@ -1,0 +1,313 @@
+    <!-- navbar start -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="https://svgshare.com/i/14GW.svg" class="img-fluid" alt=""></a>
+            <div class="d-flex ms-auto d-lg-none d-block">
+                <a href="#" class="btn sm-btn"><img src="https://svgshare.com/i/14HA.svg" class="img-fluid" alt="">
+                    <a href="#" class="btn sm-btn sm-btn-two"><img src="https://svgshare.com/i/14Gg.svg" class="img-fluid" alt="">
+                    </a>
+            </div>
+            <a class="btn navbar-toggler sm-btn border-0" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasExample" aria-controls="offcanvasExample">
+                <img src="./images/bars.svg" class="img-fluid" alt="menu icon">
+            </a>
+            <div class="offcanvas offcanvas-start-lg  " tabindex="-1" id="offcanvasExample"
+                aria-labelledby="offcanvasExampleLabel">
+                <div class="offcanvas-header d-flex d-lg-none justify-content-end">
+
+                    <a href="javascript:void(0) " class="text-reset p-0 float-start" data-bs-dismiss="offcanvas"
+                        aria-label="close">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+                <div class="offcanvas-body p-lg-0">
+                    <a class="navbar-brand d-lg-none d-block oc-logo" href="/index.html"><img src="https://svgshare.com/i/14GW.svg"
+                            class="img-fluid" alt=""></a>
+                    <ul class="navbar-nav">
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/index.html">Home</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/terminal.html">Product</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/pricing.html">Pricing</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/grow.html">Grow With Us</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/comunity.html">Community</a>
+                        </li>
+                        <li class="nav-item  ">
+                            <a class="nav-link" aria-current="page" href="/testimonial.html">Testimonials</a>
+                        </li>
+                    </ul>
+                    <div class="ms-auto d-lg-block d-none">
+                        <a href="/signin.html" class="btn clrb"> <img src="https://svgshare.com/i/14HA.svg" alt=""> Login</a>
+                        <a href="/request.html" class="btn cst-btn nav-btn">Request Demo <img src="https://svgshare.com/i/14Gg.svg" alt=""></a>
+                    </div>
+                    <div class="d-lg-none d-block oc-copy">
+                        <p>(C) Copyright, all rights reserved</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-- navbar end -->
+        <!-- footer start -->
+  <footer id="footer">
+        <div class="container">
+            <div class="row footer-row">
+                <div class="col-lg-5 col-12 text-center">
+                    <img src="./images/logo.svg" class="img-fluid ft-logo" alt="logo">
+                    <p class="ft-text">Gain the Competitive Edge with Real-Time Data Analysis and Predictive Insights
+                    </p>
+                    <div class="ft-store">
+                        <p class="pb-3">Available On</p>
+                        <div>
+                            <a href="#"><img src="./images/mac-os.svg" class="img-fluid" alt="mac-os"></a>
+                            <a href="#"><img src="./images/windows.svg" class="img-fluid" alt="windowss"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mx-auto">
+                    <div class="ft-list">
+                        <h5>Pages</h5>
+                        <p><a href="#">Home</a></p>
+                        <p><a href="#">Product</a></p>
+                        <p><a href="#">Resources</a></p>
+                        <p><a href="#">Use Cases</a></p>
+                        <p><a href="#">Pricing</a></p>
+                        <p><a href="#">Request a Demo</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-6 mx-auto">
+                    <div class="ft-list">
+                        <h5>Other Pages</h5>
+                        <p><a href="#">Privacy Policy</a></p>
+                        <p><a href="#">Terms of Service </a></p>
+                        <p><a href="#">Risk Disclosure</a></p>
+                        <p><a href="#">Legal</a></p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-4 col-12 mx-auto cnt-info">
+                    <div class="ft-list">
+                        <h5>Contact Info</h5>
+                        <p class="ft-text-two">350 N Lasalle St Suite 600
+                            Chicago, Il 60654</p>
+                        <p><a href="tel:+18669657552">(866) 965 -7552</a></p>
+                        <p><a href="mailto:info@primemarket-terminal.com">info@primemarket-terminal.com</a></p>
+                    </div>
+                    <div class="ft-social">
+                        <h5>Contact Info</h5>
+   <div>
+                            <a href="#"><img src="./images/facebook.svg" class="img-fluid" alt="facebook"></a>
+                            <a href="#"><img src="./images/instagram.svg" class="img-fluid" alt="instagram"></a>
+                            <a href="#"><img src="./images/linkedin.svg" class="img-fluid" alt="instagram"></a>
+                            <a href="#"><img src="./images/youtube.svg" class="img-fluid" alt="youtube"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <section id="copyright">
+        <div class="container row-copyright">
+            <div class="row">
+                <div class="col text-center">
+                    <p>All rights received , © 2023 - PrimeMarket Terminal</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- footer end -->
+
+ 
+/* nav styles start */
+.navbar {
+  padding: 4px 0;
+  box-shadow: 0px 10px 10px -3px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  margin-top: -8px;
+  margin-right: 50px;
+  width: 50px;
+}
+.nav-item {
+  margin: auto;
+}
+.nav-link {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray);
+  padding: 6px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.activex {
+  font-size: 15px;
+  font-weight: 500;
+  color: var(--gray);
+  background-color: #efeeee;
+}
+.nav-link:hover {
+  background-color: #efeeee;
+}
+
+.nav-btn {
+  margin: 20px 10px;
+}
+.navbar-nav .nav-item {
+  margin-left: 8px;
+  margin-right: 8px;
+}
+
+.oc-logo {
+  padding-bottom: 24px;
+}
+.text-reset i {
+  font-size: 20px;
+}
+.oc-copy p {
+  font-size: 12px;
+  font-weight: 400;
+  color: var(--gray);
+}
+.offcanvas-body {
+  overflow-x: hidden;
+  position: relative;
+}
+.oc-copy {
+  position: absolute;
+  width: 100%;
+  bottom: 12px;
+  left: 25px;
+}
+/* nav styles end */
+/* footer styles start */
+#footer {
+  padding: 90px 0;
+  background-image: url(../images/footer-image.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--text);
+}
+.footer-row .ft-logo {
+  width: 90px;
+}
+.ft-text {
+  padding-top: 20px;
+  padding-bottom: 60px;
+  max-width: 400px;
+  margin: 0 auto;
+}
+.ft-text-two {
+  max-width: 200px;
+}
+.footer-row p {
+  font-size: 14px;
+  font-weight: 400;
+}
+.footer-row h5 {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--text);
+  padding-bottom: 12px;
+}
+
+.ft-list p {
+  padding-top: 12px;
+}
+.ft-list a {
+  text-decoration: none;
+  color: var(--text);
+}
+.ft-list a:hover {
+  transition: 0.1s ease-in-out;
+  color: var(--accent-color);
+}
+.ft-social {
+  padding-top: 24px;
+}
+
+.ft-social h5 {
+  padding-bottom: 18px;
+}
+
+.ft-social a {
+  padding-top: 7px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 8px;
+  margin-right: 5px;
+  background-color: var(--text);
+  border-radius: 6px;
+  transition: 0.1s ease-in-out;
+}
+.ft-social a svg {
+  vertical-align: middle;
+  text-align: center;
+}
+.ft-social a:hover {
+  background-color: var(--accent-color);
+}
+
+#copyright {
+  padding: 12px 0;
+  background-color: var(--text);
+}
+.row-copyright p {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--white);
+}
+
+/* footer styles end */
+
+@media (max-width: 767.98px) {
+  #footer {
+    padding: 60px 0;
+
+  }
+}
+
+@media (max-width: 991.98px) {
+  #footer{
+    background-image: url(../images/footer-sm.png);
+    background-color: #F1F1F1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .navbar {
+    padding: 20px 0;
+  }
+
+  .offcanvas {
+    width: 300px !important;
+  }
+  .offcanvas-start-lg {
+    top: 0;
+    left: 0;
+    border-right: 1px solid rgba(0, 0, 0, 0.2);
+    transform: translateX(-100%);
+  }
+  .ft-store {
+    padding-bottom: 50px;
+  }
+
+}
+
+@media (max-width: 1199px){
+  .navbar-nav .nav-item {
+    margin-left: 2px;
+    margin-right: 2px;
+
+  }
+  .nav-btn{
+    margin:  20px 10px 20px 0 ;
+  }
+}
